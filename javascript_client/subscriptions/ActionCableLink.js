@@ -27,7 +27,7 @@ function ActionCableLink(options) {
           )
         },
         received: function(payload) {
-          if (payload.result.data) {
+          if (payload.result) {
             observer.next(payload.result)
           }
 
